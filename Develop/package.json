@@ -1,14 +1,27 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Command line app to create README file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Cody",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^8.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ccooper9893/README-Generator.git"
+  },
+  "keywords": [
+    "README",
+    "Generator",
+    "Challenge"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ccooper9893/README-Generator/issues"
+  },
+  "homepage": "https://github.com/Ccooper9893/README-Generator#readme"
 }
