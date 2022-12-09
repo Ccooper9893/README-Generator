@@ -60,26 +60,26 @@ const questions =  [
     {
         type: 'input',
         name: 'screenshot',
-        message: 'If available, please provide any screenshots showing how to use your application. - '
+        message: 'If available, please provide any screenshots showing how to use your application. - ',
+        default: ''
     },
     {
         type: 'input',
         name: 'contribution',
         message: 'Please provide contribution guidelines to your project. - ',
-        default: 'Currently not available.'
+        default: 'N/A'
     },
     {
         type: 'input',
         name: 'testing',
         message: 'Please provide examples for testing your application. - ',
-        default: 'Currently not available.'
+        default: 'N/A'
     },
     {
         type: 'list',
         name: 'license',
         message: 'Please select a license. - ',
-        choices: ['MIT', 'Apache_License_2.0', 'GPL_3.0', 'Mozilla_Public_License_2.0'],
-        default: 'Currently not available.'
+        choices: ['MIT', 'Apache_License_2.0', 'GPL_3.0', 'Mozilla_Public_License_2.0', 'none'],
     },
     {
         type: 'input',
