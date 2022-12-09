@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs'); //File System module
 const inquirer = require('inquirer');//Inquirer module (command line interface)
-const generateMarkdown = require('./utils/generateMarkdown');//Generate Markdown function
+const generateMarkdown = require('./utils/generateMarkdown');//Generate Markdown module
 
 // TODO: Create an array of questions for user input
 const questions =  [
@@ -9,7 +9,7 @@ const questions =  [
         type: 'input',
         name: 'title',
         message: 'What is the title of your project? - ',
-        validate: userInput => {
+        validate: userInput => { //Requires a user answer
             if (userInput) {
                 return true
             } else {
@@ -22,7 +22,7 @@ const questions =  [
         type: 'input',
         name: 'description',
         message: 'Please provide a description of your project. - ',
-        validate: userInput => {
+        validate: userInput => { //Requires a user answer
             if (userInput) {
                 return true
             } else {
@@ -35,7 +35,7 @@ const questions =  [
         type: 'input',
         name: 'installation',
         message: 'What are the steps required to install your project? - ',
-        validate: userInput => {
+        validate: userInput => { //Requires a user answer
             if (userInput) {
                 return true
             } else {
@@ -48,7 +48,7 @@ const questions =  [
         type: 'input',
         name: 'usage',
         message: 'Please provide instructions and examples for using your application. - ',
-        validate: userInput => {
+        validate: userInput => { //Requires a user answer
             if (userInput) {
                 return true
             } else {
@@ -85,7 +85,7 @@ const questions =  [
         type: 'input',
         name: 'username',
         message: 'Please enter your github username.',
-        validate: userInput => {
+        validate: userInput => { //Requires a user answer
             if (userInput) {
                 return true
             } else {
@@ -98,7 +98,7 @@ const questions =  [
         type: 'input',
         name: 'email',
         message: 'Please enter your email address.',
-        validate: userInput => {
+        validate: userInput => { //Requires a user answer
             if (userInput) {
                 return true
             } else {
@@ -111,17 +111,17 @@ const questions =  [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), (err) =>
+    fs.writeFile(fileName, generateMarkdown(data), (err) => //Writes README file calling imported generateMarkdown function
     err ? console.log(err) : console.log('Your readme has been successfully generated!'));
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
+    inquirer.prompt(questions) //Calling inquirer to prompt questions in terminal
     .then((data) => {
-        writeToFile(`${data.title}.md`, data);
+        writeToFile('README.md', data); //Calls the function to write the README file
     })
-    .catch((err) => {
+    .catch((err) => { //Catches any errors 
         console.log(err)
     })
 }

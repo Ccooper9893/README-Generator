@@ -1,24 +1,36 @@
-# Professional README Generator Starter Code
+# README-Generator
+  ![Badge image](https://img.shields.io/badge/license-MIT-green})
 
-##User Story
-- AS A developer
-- I WANT a README generator
-- SO THAT I can quickly create a professional README for a new project
+  ## Description
+  This is a node.js app that generates a professionally made README file using inquirer. This application will save precious time when creating new projects. Building this app has taught me how to use node.js and inquirer and strengthen my Javascript skills.
 
-##Acceptance Criteria
-- GIVEN a command-line application that accepts user input
-- WHEN I am prompted for information about my application repository
-- THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-- WHEN I enter my project title
-- THEN this is displayed as the title of the README
-- WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-- THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-- WHEN I choose a license for my application from a list of options
-- THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-- WHEN I enter my GitHub username
-- THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-- WHEN I enter my email address
-- THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-- WHEN I click on the links in the Table of Contents
-- THEN I am taken to the corresponding section of the README
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Testing](#testing)
+  - [License](#license)
+  - [Questions](#questions)
+
+  ## Installation
+  To use this application you will need node.js. Create a package.json by typing "npm init -y" then import inquirer by typing "npm i inquirer@8.2.4". 
+
+  ## Usage
+  - First, start the application by typing "node index.js" in the terminal. When prompted a question input your answer. When all questions are answered the application with generate a readme file.
+  - ![Screenshots](example.gif)
+  - You can also view this video here: https://drive.google.com/file/d/1OKhAsoHNRHHBKrejg_hWTt0lES_xYE8C/view?usp=sharing
+
+  ## Contribution
+  N/A
+
+  ## Testing
+  N/A
+
+  ## License
+  This application is covered under the MIT license.
+  For more information about this license please visit https://opensource.org/licenses/MIT
+
+  ## Questions
+  For questions or concerns please contact me via email or Github.
+  - Github: https://github.com/ccooper9893
+  - Email: cody_codster@live.com

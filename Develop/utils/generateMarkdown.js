@@ -36,7 +36,7 @@ function renderLicenseSection(license, link) {
   }
 }
 
-// If there are no screenshots return an empty string
+// If there are no screenshots for usage section return an empty string
 function renderScreenshot(screenshot) {
   if (screenshot == '') {
     return ''
@@ -47,6 +47,7 @@ function renderScreenshot(screenshot) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  //Calling functions to generate license badge, link, and section. Also calls function for screenshots if included
   let lBadge = renderLicenseBadge(data.license);
   let lLink = renderLicenseLink(data.license);
   let lSection = renderLicenseSection(data.license, lLink);
@@ -73,7 +74,7 @@ function generateMarkdown(data) {
   ${screenshot}
 
   ## Contribution
-  ${data.contribtion}
+  ${data.contribution}
 
   ## Testing
   ${data.testing}
