@@ -13,12 +13,12 @@
   - [Questions](#questions)
 
   ## Installation
-  To use this application you will need node.js. Create a package.json by typing "npm init -y" then import inquirer by typing "npm i inquirer@8.2.4". 
+  To use this application you will need node.js and Visual Studio Code. 
 
   ## Usage
   - First, start the application by typing "node index.js" in the terminal. When prompted a question input your answer. When all questions are answered the application with generate a readme file.
-  - ![Screenshots]()
-  - You can also view this video here: https://drive.google.com/file/d/1OKhAsoHNRHHBKrejg_hWTt0lES_xYE8C/view?usp=sharing
+  - Walkthrough Guide: https://drive.google.com/file/d/1IqQH55mEOoAE87vKT2eZTumTe454hzmo/view
+
   ## Contribution
   N/A
 
