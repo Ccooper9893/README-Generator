@@ -41,7 +41,7 @@ function renderScreenshot(screenshot) {
   if (screenshot == '') {
     return ''
   } else {
-    return `- ![Screenshots](${screenshot})`
+    return `![Screenshots](${screenshot})`
   }
 }
 
@@ -70,7 +70,7 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  - ${data.usage}
+  ${data.usage}<br><br>
   ${screenshot}
 
   ## Contribution

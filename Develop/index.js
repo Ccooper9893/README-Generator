@@ -119,7 +119,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions) //Calling inquirer to prompt questions in terminal
     .then((data) => {
-        writeToFile('README.md', data); //Calls the function to write the README file
+        writeToFile('generatedReadme.md', data); //Calls the function to write the README file
     })
     .catch((err) => { //Catches any errors 
         console.log(err)

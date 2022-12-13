@@ -17,9 +17,8 @@
 
   ## Usage
   - First, start the application by typing "node index.js" in the terminal. When prompted a question input your answer. When all questions are answered the application with generate a readme file.
-  - ![Screenshots](example.gif)
+  - ![Screenshots]()
   - You can also view this video here: https://drive.google.com/file/d/1OKhAsoHNRHHBKrejg_hWTt0lES_xYE8C/view?usp=sharing
-  
   ## Contribution
   N/A
 
